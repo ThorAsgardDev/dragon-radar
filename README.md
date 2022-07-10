@@ -15,6 +15,7 @@ A video preview is available here:  https://www.youtube.com/shorts/0jsaYxSqkwQ
 | Component | Note | The place where I got it |
 | --------- | ---- | ------------------------ |
 | Raspberry Pi Zero | Any Raspberry Pi Zero supplier ||
+| SDCard | An SDCard for the Raspberry Pi Zero ||
 | screen + driver | Be careful, there are different models of the driver pcb (the dimensions can be different). I personally got this version: ![](./img/hdmi-to-mipi-driver.jpg) | [Link](https://fr.aliexpress.com/item/4000543786784.html?spm=a2g0o.productlist.0.0.3e422d98EyQn09&algo_pvid=58d8c4ea-0240-4de5-9285-a339fac76b9d&algo_exp_id=58d8c4ea-0240-4de5-9285-a339fac76b9d-8&pdp_ext_f=%7B%22sku_id%22%3A%2210000002795216032%22%7D&pdp_npi=2%40dis%21EUR%21%2171.11%2194.83%21%21%21%21%400b0a182b16573979907571372eb2f4%2110000002795216032%21sea) |
 | battery || [Link](https://www.ebay.fr/itm/Li-Po-Li-polymer-rechargeable-Battery-ion-3-7V-900-mAh-902040-for-GPS-MP5/254362430726?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649) |
 | battery charger + boost || [Link](https://www.adafruit.com/product/1944) |
@@ -55,8 +56,8 @@ then I sold the component on it.
 ![](./img/connection-diagram.png)
 
 ## Fixings
-To fix components inside the case I used glue sticks and insert/screws for some PCBs.
-The M3 insert used are: [Link](https://www.rs-particuliers.com/Product.aspx?Product=278534).
+To fix components inside the case I used glue sticks and inserts/screws for some PCBs.
+The M3 inserts used are: [Link](https://www.rs-particuliers.com/Product.aspx?Product=278534).
 
 ## Case
 I have designed the case using Fusion 360.
@@ -105,8 +106,18 @@ For a better result I have sent the STL files to [Sculpteo](https://www.sculpteo
 2. *Case front*
    ![](./img/assembly/front-1.png)
 
-The button cap is clipped on the push button.
+The button cap is simply clipped on the push button.
 
 ## Software
 
-TODO
+For this part there are two different ways:
+1. Using Raspberry Pi OS:
+   - Install Raspberry Pi OS on the SDCard.
+   - Configure the system to send output audio on GPIO 18 (adding dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4 to /boot/config.txt should do the trick).
+   - Add the dragon-radar program, compile it and configure the system to run it start.
+   - Configure the system as read only filesystem.
+
+2. Use buildroot to create our own Raspberry Pi Zero image.
+    This is more complex but should boot fastest.
+
+I personnaly choose the second way.
