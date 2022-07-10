@@ -51,7 +51,7 @@ I have designed a specific PCB to perform these tasks.
 | 8002 audio amp IC | 1 | SOIC 8 |
 
 I sent the PCB gerber files to [PCBWay](https://www.pcbway.com/?adwgc=666&campaignid=172480651&adgroupid=8787904531&feeditemid=&targetid=kwd-297443275619&loc_physical_ms=9056243&matchtype=p&network=g&device=c&devicemodel=&creative=347469560617&keyword=pcbway&placement=&target=&adposition=&gclid=EAIaIQobChMIzebIkeTs-AIVheh3Ch3AegBBEAAYASAAEgLuB_D_BwE)
-then I sold the component on it.
+then I sold the components on it.
 
 ### Connection diagram
 
