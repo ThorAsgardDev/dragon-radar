@@ -117,7 +117,7 @@ For this part there are two different ways:
    - Add the dragon-radar program, compile it and configure the system to run it start.
    - Configure the system as read only filesystem.
 
-2. Use buildroot to create our own Raspberry Pi Zero image.
+2. Using buildroot to create our own customized Raspberry Pi Zero image.
     This is more complex but should boot fastest.
 
 I personnaly choose the second way.
