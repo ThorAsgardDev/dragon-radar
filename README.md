@@ -27,6 +27,8 @@ A video preview is available here:  https://www.youtube.com/shorts/0jsaYxSqkwQ
 | hdmi ribbon | 50mm | Only FFC -5cm from [Link](https://fr.aliexpress.com/item/4000014554460.html?spm=a2g0o.productlist.0.0.6c462670tgQ4ly&algo_pvid=ea4fa7b5-1e2b-43ce-b382-1920ecd65f2d&aem_p4p_detail=2022070914034712219789050274150037514177&algo_exp_id=ea4fa7b5-1e2b-43ce-b382-1920ecd65f2d-1&pdp_ext_f=%7B%22sku_id%22%3A%2212000021640768879%22%7D&pdp_npi=2%40dis%21EUR%21%212.23%212.23%21%21%21%21%400b0a182b16574006277181244eb2f4%2112000021640768879%21sea) |
 | audio filter + amplifier | see below ||
 
+A 5V micro USB charger is also required to charge the dragon radar battery.
+
 ### Audio filter + Amplifier
 Unfortunately the Raspberry Pi Zero doesn't offer an easy way to send audio output to an extrenal speaker.
 An audio signal can be retrieved from the GPIO 18. This signal must be filtered and amplified before being sent to a speaker.
