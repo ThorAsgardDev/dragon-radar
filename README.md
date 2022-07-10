@@ -115,7 +115,7 @@ The button cap is simply clipped on the push button.
 For this part there are two different ways:
 1. Using Raspberry Pi OS:
    - Install Raspberry Pi OS on the SDCard.
-   - Configure the system to send output audio on GPIO 18 (adding dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4 to /boot/config.txt should do the trick).
+   - Configure the system to send output audio to GPIO 18 (adding dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4 to /boot/config.txt should do the trick).
    - Add the dragon-radar program, compile it and configure the system to run it start.
    - Configure the system as read only filesystem.
 
