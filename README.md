@@ -116,7 +116,7 @@ For this part there are two different ways:
 1. Using Raspberry Pi OS:
    - Install Raspberry Pi OS on the SDCard.
    - Configure the system to send output audio to GPIO 18 (adding dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4 to /boot/config.txt should do the trick).
-   - Add the dragon-radar program, compile it and configure the system to run it start.
+   - Add the dragon-radar program, compile it and configure the system to run at start.
    - Configure the system as read only filesystem.
 
 2. Using Buildroot to create our own customized Raspberry Pi Zero image.
