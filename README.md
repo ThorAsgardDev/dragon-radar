@@ -122,4 +122,4 @@ For this part there are two different ways:
 2. Using Buildroot to create our own customized Raspberry Pi Zero image.
     This is more complex but should boot fastest.
 
-I personnaly choose the second way.
+I personnaly choose the second way, the pi zero image can be found here: [sdcard-dr-snd-hdmi-init-fast.zip](./software/pi-zero-img/sdcard-dr-snd-hdmi-init-fast.zip)
