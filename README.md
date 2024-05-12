@@ -10,7 +10,7 @@ A video preview is available here:  https://www.youtube.com/shorts/0jsaYxSqkwQ
 
 ## Hardware
 
-### Bill or materials
+### Bill of materials
 
 | Component | Note | The place where I got it |
 | --------- | ---- | ------------------------ |
